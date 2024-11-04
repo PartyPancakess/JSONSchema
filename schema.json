@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "Param": {
+            "additionalProperties": {
+                "$ref": "#/definitions/Variable"
+            },
+            "type": "object"
+        },
+        "Variable": {
+            "properties": {
+                "array": {
+                    "type": "boolean"
+                },
+                "children": {
+                    "$ref": "#/definitions/Param"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "type": {
+                    "$ref": "#/definitions/VariableType"
+                }
+            },
+            "type": "object"
+        },
+        "VariableType": {
+            "enum": [
+                "image",
+                "string",
+                "number",
+                "boolean",
+                "object",
+                "suggested-question"
+            ],
+            "type": "string"
+        }
+    },
+    "properties": {
+        "param": {
+            "$ref": "#/definitions/Param"
+        }
+    },
+    "type": "object"
+}
+
