@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/PartyPancakess/JSONSchema/refs/heads/main/schema.json",
+  "params": {
+    "image": {
+      "type": "image",
+      "description": "Matched from context that is most relevant",
+      "array": true
+    },
+    "title": {
+      "type": "string",
+      "description": "Summarized or rephrased title from the text context"
+    },
+    "summary": {
+      "type": "string",
+      "description": "Summarized or rephrased text information"
+    },
+    "matters": {
+      "type": "string",
+      "description": "Matters of ",
+      "array": true
+    },
+    "questions": {
+      "type": "suggested-question",
+      "description": "adsadsasddas",
+      "array": true
+    }
+  }
+}
