@@ -1,12 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/PartyPancakess/JSONSchema/refs/heads/main/schema.json",
   "params": {
-    "image": {
+    "images": {
       "type": "image",
       "description": "An array with a single item: a single Image ID matched from context that is most relevant, or 0 if none available",
       "array": true
     },
-    "title": {
+    "titles": {
       "type": "string",
       "description": "An array with a single item: Summarized or rephrased title from the text context",
       "array": true
