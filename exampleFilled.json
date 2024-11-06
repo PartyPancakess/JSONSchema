@@ -3,25 +3,22 @@
   "params": {
     "image": {
       "type": "image",
-      "description": "Matched from context that is most relevant",
+      "description": "An array with a single item: a single Image ID matched from context that is most relevant, or 0 if none available",
       "array": true
     },
     "title": {
       "type": "string",
-      "description": "Summarized or rephrased title from the text context"
+      "description": "An array with a single item: Summarized or rephrased title from the text context",
+      "array": true
     },
-    "summary": {
+    "texts": {
       "type": "string",
-      "description": "Summarized or rephrased text information"
-    },
-    "matters": {
-      "type": "string",
-      "description": "Matters of ",
+      "description": "Summarized or rephrased text information. There can be as many string elements as it needs to be here.",
       "array": true
     },
     "questions": {
       "type": "suggested-question",
-      "description": "adsadsasddas",
+      "description": "Up to 6 relevant questions based on the texts",
       "array": true
     }
   }
