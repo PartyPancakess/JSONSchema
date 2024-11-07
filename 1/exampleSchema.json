@@ -1,29 +1,21 @@
 {
   "$schema": "https://raw.githubusercontent.com/PartyPancakess/JSONSchema/refs/heads/main/schema.json",
   "params": {
-    "items":{
+    "items": {
       "type": "object",
       "array": true,
       "children": {
-        "images": {
+        "image": {
           "type": "image",
-          "description": "An array of images' ids in order. Image IDs are matched from context that is most relevant, or 0 if none available",
-          "array": true
+          "description": "An array of images' ids in order. Image IDs are matched from context that is most relevant, or 0 if none available"
         },
-        "titles": {
+        "title": {
           "type": "string",
-          "description": "An array titles in the same order with the images: Summarized or rephrased titles from the text context",
-          "array": true
+          "description": "An array titles in the same order with the images: Summarized or rephrased titles from the text context"
         },
-        "texts": {
+        "text": {
           "type": "string",
-          "description": "Summarized or rephrased text information. In the same order as the images and titles",
-          "array": true
-        },
-        "questions": {
-          "type": "string",
-          "description": "Same number of questions as the length of images, titles and texts. Every questions is an explanation question of that title/text, such as 'What is x?' or 'Who is X?'",
-          "array": true
+          "description": "Summarized or rephrased text information. In the same order as the images and titles"
         }
       }
     }
