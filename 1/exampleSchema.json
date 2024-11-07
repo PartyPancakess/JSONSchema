@@ -3,19 +3,20 @@
   "params": {
     "items": {
       "type": "object",
+      "description": "A list of elements related to and explaining the user message. Each element has its own image, title and text.",
       "array": true,
       "children": {
         "image": {
           "type": "image",
-          "description": "An array of images' ids in order. Image IDs are matched from context that is most relevant, or 0 if none available"
+          "description": "An Image ID. Image ID matched from context that is most relevant, or 0 if none available"
         },
         "title": {
           "type": "string",
-          "description": "An array titles in the same order with the images: Summarized or rephrased titles from the text context"
+          "description": "A title: Summarized or rephrased from the text context"
         },
         "text": {
           "type": "string",
-          "description": "Summarized or rephrased text information. In the same order as the images and titles"
+          "description": "Summarized or rephrased text information. Appropriate for the iamge and title"
         }
       }
     }
